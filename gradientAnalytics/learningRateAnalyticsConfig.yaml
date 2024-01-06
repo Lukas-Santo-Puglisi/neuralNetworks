@@ -1,0 +1,28 @@
+experiment:
+  total_epochs: 4
+
+hyperparameters:
+  lr_start: 0.001
+  reduction_factor: 0.001
+  weight_decay: 0.00001
+  numberOfLayers: 5
+  embed_size: 200
+  hidden_size: 1500
+
+runtime:
+  device: "cuda"  # Set this to "cpu" if you want to run on CPU
+  num_workers: 8
+  batch_size: 256
+  shuffle: True
+
+seeds:
+  numpy_seed: 423455335
+  torch_seed: 423455335
+
+
+data:
+  min_freq: 4
+  context_size: 5
+  training_data_corpus_path: '../rawWikiText2/wiki.train.txt'
+  validation_data_corpus_path: '../rawWikiText2/wiki.valid.txt'
+  test_data_corpus_path: '../rawWikiText2/wiki.test.txt'
