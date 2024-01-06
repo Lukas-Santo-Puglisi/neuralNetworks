@@ -1,0 +1,29 @@
+experiment:
+  total_epochs: 15
+  patience: 4
+  num_iterations_for_hyperparameters: 40
+
+hyperparameters:
+  lr_start_range: [0.00001, 0.01]
+  weight_decay_range: [0.00001, 0.001]
+  reduction_factor_range: [0.001, 0.1]
+  numberOfLayers_range: [2, 10]
+  embed_size_range: [50, 400]
+  hidden_size_range: [200, 1200]
+
+runtime:
+  device: "cuda"  # Set this to "cpu" if you want to run on CPU
+  num_workers: 8
+  batch_size: 256
+  shuffle: True
+
+seeds:
+  numpy_seed: 423455335
+  torch_seed: 423455335
+
+
+data:
+  min_freq: 4
+  context_size: 10
+  training_data_corpus_path: '../rawWikiText2/wiki.train.txt'
+  validation_data_corpus_path: '../rawWikiText2/wiki.valid.txt'
