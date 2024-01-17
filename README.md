@@ -51,7 +51,7 @@ To set up and run the code from this repository, you will need to ensure that yo
 
 #### Finding good hyperparameters
 -  [Link](https://github.com/Lukas-Santo-Puglisi/neuralNetworks/tree/main/hyperparameterTuningExperiment) to the code. 
-- **Content**: In this experiment, we implement a random hyperparameter search.
+- **Content**: In experiment 3, we implement a random hyperparameter search.
 
 ---
 
